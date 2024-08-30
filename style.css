@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(218, 23%, 16%);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding-inline: 16px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.generator {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  max-width: 540px;
+  display: grid;
+  grid: max-content 32px / 1fr;
+}
+
+.output {
+  background: hsl(217, 19%, 24%);
+  padding: 40px 24px 64px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 545px) {
+  .output {
+    padding: 48px 48px 72px;
+  }
+}
+
+.number {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 3.45714px;
+  color: hsl(150, 100%, 66%);
+}
+
+@media screen and (min-width: 545px) {
+  .number {
+    letter-spacing: 4.08571px;
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+
+.quote {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: -0.257143px;
+  color: hsl(193, 38%, 86%);
+}
+
+@media screen and (min-width: 545px) {
+  .quote {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.3px;
+  }
+}
+
+.divider {
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  width: 64px;
+  height: 64px;
+  background: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  place-self: end center;
+  transition: box-shadow 250ms;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.btn:is(:hover) {
+  box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+.btn-img {
+  transition: transform 250ms;
+}
